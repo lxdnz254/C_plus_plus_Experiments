@@ -1,10 +1,7 @@
 #include <iostream>
+#include "io.h"
 
 using namespace std;
-
-int readNumber();
-
-void writeAnswer(int x);
 
 int main()
 {
