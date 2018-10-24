@@ -3,7 +3,7 @@
 // Author      : Alex McBride
 // Version     :
 // Copyright   : 2018
-// Description : Hello World in C++, Ansi-style
+// Description : Hello World in C++, ANSI-style
 //============================================================================
 
 #include <iostream>
