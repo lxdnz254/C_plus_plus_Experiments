@@ -18,10 +18,14 @@ int main()
     std::getline(std::cin, name); // read a full line of text into name
 
     cout << "Enter your age: ";
-    string age;
-    std::getline(std::cin, age); // read a full line of text into age
+    int age {0};
+    cin >> age;
+
+    int letters = name.length();
+    double agePerLetter = static_cast<double>(age)/letters;
 
     cout << "Your name is " << name << ", your age is " << age << ", and you picked " << choice << endl;
+    cout << "You have lived for " << agePerLetter << " years per letter in your name" << endl;
 
     return 0;
 }
