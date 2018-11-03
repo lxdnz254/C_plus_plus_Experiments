@@ -3,7 +3,11 @@
 
 namespace creatures
 {
+<<<<<<< HEAD
     enum class MonsterType
+=======
+    enum MonsterType
+>>>>>>> 109f12075de2a55f6929312d03d63cec67eb2246
     {
         OGRE,
         DRAGON,
@@ -19,7 +23,11 @@ namespace creatures
         int health;
     };
 
+<<<<<<< HEAD
     std::string typeOfMonster(Monster monster);
+=======
+    std::string typeOfMonster(int type);
+>>>>>>> 109f12075de2a55f6929312d03d63cec67eb2246
     void printMonster(Monster monster);
 }
 
