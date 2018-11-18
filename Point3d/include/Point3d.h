@@ -7,8 +7,9 @@ class Point3d
     public:
         /** Default constructor */
         Point3d();
-        void setValues(double x,y,z);
+        void setValues(double x,double y,double z);
         void print();
+        bool isEqual(Point3d &p);
 
     protected:
 

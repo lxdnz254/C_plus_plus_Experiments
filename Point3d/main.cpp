@@ -1,34 +1,7 @@
 #include <iostream>
+#include "include/Point3d.h"
 
 using namespace std;
-
-class Point3d
-{
-    public:
-
-        void setValues(double x, double y, double z)
-        {
-            m_x = x;
-            m_y = y;
-            m_z = z;
-        }
-        void print()
-        {
-            cout << "<" << m_x << ", " << m_y << ", " << m_z << ">" << '\n';
-        }
-
-        bool isEqual(const Point3d &p)
-        {
-            return m_x == p.m_x && m_y == p.m_y && m_z == p.m_z;
-        }
-
-    protected:
-
-    private:
-        double m_x; //!< Member variable "m_x"
-        double m_y; //!< Member variable "m_y"
-        double m_z; //!< Member variable "m_z"
-};
 
 int main()
 {
