@@ -5,6 +5,7 @@
 #ifndef OVERLOADFRACTION_FRACTION_H
 #define OVERLOADFRACTION_FRACTION_H
 
+#include <iostream>
 
 class Fraction {
 public:
@@ -22,6 +23,10 @@ public:
     friend Fraction operator*(const Fraction &f1, const Fraction &f2);
     friend Fraction operator*(const Fraction &f1, int num);
     friend Fraction operator*(int num, const Fraction &f1);
+
+    // overloading output/input operators
+    friend std::ostream& operator<<(std::ostream &out, const Fraction &f1);
+    friend std::istream& operator>>(std::istream &in, Fraction &f1);
 
 protected:
 

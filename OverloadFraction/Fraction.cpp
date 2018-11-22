@@ -17,6 +17,27 @@ Fraction operator*(int num, const Fraction &f1){
     return {f1.m_numerator * num, f1.m_denominator};
 }
 
+std::ostream& operator<<(std::ostream &out, const Fraction &f1)
+{
+    out << f1.m_numerator << "/" << f1.m_denominator;
+
+    return out;
+}
+
+std::istream& operator>>(std::istream &in, Fraction &f1)
+{
+    char c;
+    // Overwite the values of f1
+    in >> f1.m_numerator;
+    in >> c; // ignore the '/' separator
+    in >> f1.m_denominator;
+
+    //Overwiting f1, so reduce again
+    f1.reduce();
+
+    return in;
+}
+
 void Fraction::print(){
     std::cout << m_numerator << "/" << m_denominator << '\n';
 }
