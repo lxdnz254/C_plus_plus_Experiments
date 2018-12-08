@@ -8,3 +8,6 @@ std::ostream& operator<<(std::ostream &out, const Banana banana) {
     out << "Banana(" << banana.getName() << ", " << banana.getColour() << ")" << '\n';
     return out;
 }
+
+Banana::Banana(std::string name, std::string colour)
+        : Fruit(std::move(name), std::move(colour)){}

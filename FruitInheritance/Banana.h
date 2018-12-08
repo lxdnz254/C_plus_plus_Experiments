@@ -14,10 +14,9 @@
 class Banana: public Fruit {
 
 public:
-    Banana(std::string name, std::string colour)
-        : Fruit(std::move(name), colour){}
+    Banana(std::string name, std::string colour);
 
-        friend std::ostream&operator<<(std::ostream &out, const Banana banana);
+    friend std::ostream&operator<<(std::ostream &out, Banana banana);
 };
 
 #endif //FRUITINHERITANCE_BANANA_H

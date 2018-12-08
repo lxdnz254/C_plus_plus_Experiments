@@ -11,3 +11,6 @@ std::ostream& operator<<(std::ostream &out, const Apple &apple) {
         << '\n';
     return out;
 }
+
+Apple::Apple(std::string name, std::string colour, double fib) :
+        Fruit(std::move(name), std::move(colour)), fibre(fib){}

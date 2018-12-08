@@ -16,7 +16,7 @@ private:
 
 public:
     Fruit(std::string name, std::string colour)
-        :m_name(std::move(name)), m_colour(colour){}
+        :m_name(std::move(name)), m_colour(std::move(colour)){}
 
         std::string getName() const;
         std::string getColour() const;

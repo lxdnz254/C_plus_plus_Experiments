@@ -16,10 +16,9 @@ private:
     double fibre;
 
 public:
-    Apple(std::string name, std::string colour, double fib):
-        Fruit(std::move(name), colour), fibre(fib){}
+    Apple(std::string name, std::string colour, double fib);
 
-        friend std::ostream& operator<<(std::ostream &out, const Apple &apple);
+    friend std::ostream& operator<<(std::ostream &out, const Apple &apple);
 };
 
 
