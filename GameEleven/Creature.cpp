@@ -28,14 +28,14 @@ char Creature::getSymbol() const {
     return c_symbol;
 }
 
-int Creature::getHealth() const {
+int Creature::getHealth() {
     return c_health;
 }
 
-int Creature::getDamage() const {
+int Creature::getDamage() {
     return c_damage;
 }
 
-int Creature::getGold() const {
+int Creature::getGold()  {
     return c_gold;
 }

@@ -18,7 +18,7 @@ private:
 public:
     explicit Player(std::string name);
     void levelUp();
-    int getLevel() const;
+    int getLevel();
     bool hasWon();
 };
 

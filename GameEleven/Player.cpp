@@ -9,7 +9,7 @@ void Player::levelUp() {
     ++c_damage;
 }
 
-int Player::getLevel() const{
+int Player::getLevel(){
     return p_level;
 }
 

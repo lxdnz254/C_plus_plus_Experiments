@@ -25,9 +25,9 @@ public:
     // getters
     std::string getName() const;
     char getSymbol() const;
-    int getHealth() const;
-    int getDamage() const;
-    int getGold() const;
+    int getHealth();
+    int getDamage();
+    int getGold();
 
     void reduceHealth(int damage);
     bool isDead();
