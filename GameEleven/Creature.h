@@ -11,7 +11,8 @@
 #include <string>
 
 class Creature {
-private:
+
+protected:
     std::string c_name;
     char c_symbol;
     int c_health;
@@ -31,7 +32,6 @@ public:
     void reduceHealth(int damage);
     bool isDead();
     void addGold(int gold);
-
 };
 
 
