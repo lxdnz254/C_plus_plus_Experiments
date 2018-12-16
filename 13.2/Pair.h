@@ -6,6 +6,7 @@
 #define INC_13_2_PAIR_H
 
 #include <iostream>
+#include <string>
 
 template <class T1, class T2>
 class Pair {
@@ -21,5 +22,11 @@ public:
     const T2& second() const { return m_y;}
 };
 
+template <class S>
+class StringValuePair : public Pair<std::string, S> {
+public:
+    StringValuePair(const std::string& key, const S& value) :
+        Pair<std::string, S>(key, value) {}
+};
 
 #endif //INC_13_2_PAIR_H
